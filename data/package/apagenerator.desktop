@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=APA Generator
+Exec=apagenerator
+Icon=x-office-document
+Terminal=false
