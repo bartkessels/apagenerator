@@ -12,6 +12,7 @@ BuildRequires:	automake
 BuildRequires:	gettext
 BuildRequires:	intltool
 BuildRequires:	itstool
+BuildRequires:	libtool
 BuildRequires:	%{_bindir}/desktop-file-install
 
 Requires:	gtk3
@@ -37,8 +38,8 @@ desktop-file-install data/package/%{name}.desktop
 %files
 %license COPYING
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.ui
+%{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Tue May 23 Bart Kessels <b.kessels@bk-mail.com> 1.0-1
+* Tue May 23 2017 Bart Kessels <b.kessels@bk-mail.com> 1.0-1
 - Initial Packaging
