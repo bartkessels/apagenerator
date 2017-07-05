@@ -33,6 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 %license COPYING
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
+%{_datadir}/glib-2.0/schemas/net.bartkessels.%{name}.gschema.xml
 
 %changelog
 * Wed Jul 05 2017 Bart Kessels <bartkessels@bk-mail.com> 2.0-1
