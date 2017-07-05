@@ -57,6 +57,6 @@ This will create a RPM file which you can install using your package manager.
 If you have Fedora and don't want to build APA Generator from source you can easily install it using dnf copr.
 
 ```
-sudo dnf copr enable bartkessels/apagenerator
-sudo dnf install apagenerator
+# dnf copr enable bartkessels/apagenerator
+# dnf install apagenerator
 ```
