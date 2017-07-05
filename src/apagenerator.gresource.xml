@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<gresources>
+
+    <gresource prefix="/net/bartkessels/apagenerator">
+        <file alias="book.ui" preprocess="xml-stripblanks">ui_book.ui</file>
+        <file alias="webpage.ui" preprocess="xml-stripblanks">ui_webpage.ui</file>
+        <file alias="settings_book.ui" preprocess="xml-stripblanks">ui_settings_book.ui</file>
+        <file alias="settings_webpage.ui" preprocess="xml-stripblanks">ui_settings_webpage.ui</file>
+    </gresource>
+
+    <gresource prefix="/net/bartkessels/apagenerator/elements">
+        <file alias="app_menu.ui" preprocess="xml-stripblanks">ui_element_app_menu.ui</file>
+    </gresource>
+
+</gresources>

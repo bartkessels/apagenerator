@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=APA Generator
+Comment=Generate APA sources
+Exec=apagenerator
+Icon=x-office-document
+Type=Application
+Categories=Tools;Office

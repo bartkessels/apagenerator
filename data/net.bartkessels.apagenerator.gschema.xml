@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schemalist>
+    <schema path="/net/bartkessels/apagenerator/" id="net.bartkessels.apagenerator">
+        <key name="apa-string-book" type="s">
+            <default>"{{author}}. {{chapter}}. ({{year}}). {{title}} ({{version}}, pp. {{page}}). {{location}}: {{publisher}}."</default>
+            <summary>APA string for a book</summary>
+            <description>
+                This is the APA string used for a book.
+                You can use the following variables:
+                {{author}}
+                {{chapter}}
+                {{year}}
+                {{title}}
+                {{version}}
+                {{page}}
+                {{location}}
+                {{publisher}}
+            </description>
+        </key>
+        <key name="apa-string-webpage" type="s">
+            <default>"{{author}}. ({{date_published}}). {{title}}. Consulted on {{date_consulted}}, at {{uri}}"</default>
+            <summary>APA string for a webpage</summary>
+            <description>
+                This is the APA string used for a webpage.
+                You can use the following variables:
+                {{author}}
+                {{date_published}}
+                {{title}}
+                {{date_consulted}}
+                {{uri}}
+            </description>
+        </key>
+    </schema>
+</schemalist>
