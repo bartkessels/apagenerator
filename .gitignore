@@ -1,7 +1,4 @@
 *.log
 
 autom4te*
-
-build/*
-data/*.in
-src/*.in
+build
