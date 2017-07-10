@@ -50,7 +50,7 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="halign">start</property>
-        <property name="label" translatable="yes">&lt;b&gt;{{author}}&lt;/b&gt;</property>
+        <property name="label" translatable="yes">{{author}}</property>
         <property name="use_markup">True</property>
         <property name="selectable">True</property>
       </object>
@@ -64,7 +64,7 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="halign">start</property>
-        <property name="label" translatable="yes">&lt;b&gt;{{year}}&lt;/b&gt;</property>
+        <property name="label" translatable="yes">{{year}}</property>
         <property name="use_markup">True</property>
         <property name="selectable">True</property>
       </object>
@@ -78,7 +78,7 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="halign">start</property>
-        <property name="label" translatable="yes">&lt;b&gt;{{version}}&lt;/b&gt;</property>
+        <property name="label" translatable="yes">{{version}}</property>
         <property name="use_markup">True</property>
         <property name="selectable">True</property>
       </object>
@@ -92,7 +92,7 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="halign">start</property>
-        <property name="label" translatable="yes">&lt;b&gt;{{title}}&lt;/b&gt;</property>
+        <property name="label" translatable="yes">{{title}}</property>
         <property name="use_markup">True</property>
         <property name="selectable">True</property>
       </object>
@@ -106,7 +106,7 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="halign">start</property>
-        <property name="label" translatable="yes">&lt;b&gt;{{chapter}}&lt;/b&gt;</property>
+        <property name="label" translatable="yes">{{chapter}}</property>
         <property name="use_markup">True</property>
         <property name="selectable">True</property>
       </object>
@@ -120,7 +120,7 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="halign">start</property>
-        <property name="label" translatable="yes">&lt;b&gt;{{page}}&lt;/b&gt;</property>
+        <property name="label" translatable="yes">{{page}}</property>
         <property name="use_markup">True</property>
         <property name="selectable">True</property>
       </object>
@@ -134,7 +134,7 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="halign">start</property>
-        <property name="label" translatable="yes">&lt;b&gt;{{location}}&lt;/b&gt;</property>
+        <property name="label" translatable="yes">{{location}}</property>
         <property name="use_markup">True</property>
         <property name="selectable">True</property>
       </object>
@@ -148,7 +148,7 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="halign">start</property>
-        <property name="label" translatable="yes">&lt;b&gt;{{publisher}}&lt;/b&gt;</property>
+        <property name="label" translatable="yes">{{publisher}}</property>
         <property name="use_markup">True</property>
         <property name="selectable">True</property>
       </object>
