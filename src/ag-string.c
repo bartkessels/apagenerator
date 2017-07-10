@@ -37,5 +37,5 @@ const gchar* ag_string_replace(const gchar* original_string, const gchar* string
     }
 
     // Concatenate all the pieces of the string and return the result
-    return g_strconcat(splitted_string[0], string_to_replace_with, splitted_string[1]);
+    return g_strconcat(splitted_string[0], string_to_replace_with, splitted_string[1], NULL);
 }
