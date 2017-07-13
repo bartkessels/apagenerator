@@ -9,9 +9,12 @@ Source0:	https://github.com/bartkessels/%{name}/archive/%{version}/%{name}-%{ver
 
 BuildRequires:  gcc
 BuildRequires:	gtk3-devel
+BuildRequires:	glib-devel
+BuildRequires:	autoconf
 BuildRequires:	automake
 
 Requires:	gtk3
+Requires:	glib
 
 %description
 Application to generate APA sources for a book or webpage to include in your reports.
@@ -22,6 +25,7 @@ Application to generate APA sources for a book or webpage to include in your rep
 %autosetup -p1
 
 %build
+autoreconf --install
 %configure
 make %{?_smp_mflags}
 
@@ -30,7 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 %make_install
 
 %files
-%license COPYING
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/glib-2.0/schemas/net.bartkessels.%{name}.gschema.xml

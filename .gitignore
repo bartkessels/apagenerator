@@ -1,4 +1,15 @@
+*.m4
+*.in
 *.log
 
 autom4te*
-build
+build/*
+
+data/*.in
+src/*.in
+
+compile
+configure
+depcomp
+install-sh
+missing
