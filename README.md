@@ -17,10 +17,10 @@ filling in the fields.
 ### Building
 
 - gcc
+- meson
+- python3
 - gtk3-devel
 - glib-devel
-- automake
-- autoconf
 
 ### Installing
 
@@ -36,9 +36,9 @@ filling in the fields.
 ## How to build
 
 ```
-$ autoreconf --install
-$ ./configure
-$ make install
+$ meson build
+$ cd build
+$ ninja install
 ```
 
 And then run `apagenerator`

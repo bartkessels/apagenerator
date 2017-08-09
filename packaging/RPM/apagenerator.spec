@@ -8,10 +8,10 @@ URL:		https://github.com/bartkessels/apagenerator
 Source0:	https://github.com/bartkessels/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  gcc
+BuildRequires:	meson
+BuildRequires:  python3
 BuildRequires:	gtk3-devel
 BuildRequires:	glib-devel
-BuildRequires:	autoconf
-BuildRequires:	automake
 
 Requires:	gtk3
 Requires:	glib
@@ -19,19 +19,16 @@ Requires:	glib
 %description
 Application to generate APA sources for a book or webpage to include in your reports.
 
-%global debug_package %{nil}
-
 %prep
-%autosetup -p1
+%autosetup -c
 
 %build
-autoreconf --install
-%configure
-make %{?_smp_mflags}
+%meson
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%make_install
+%meson_install
 
 %files
 %{_bindir}/%{name}
