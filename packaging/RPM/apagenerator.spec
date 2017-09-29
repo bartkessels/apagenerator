@@ -1,5 +1,5 @@
 Name:		apagenerator
-Version:	2.0
+Version:	2.1
 Release:	1%{?dist}
 Summary:	Generate APA source for a book or webpage
 
@@ -36,6 +36,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/glib-2.0/schemas/net.bartkessels.%{name}.gschema.xml
 
 %changelog
+* Fri Sep 29 2017 Bart Kessels <bartkessels@bk-mail.com> 2.1-1
+- Move build system to Meson
+- Fix wrong font in Settings window
+- Fix possible bug
+
 * Wed Jul 05 2017 Bart Kessels <bartkessels@bk-mail.com> 2.0-1
 - Rewrite to GObject
 - Allow user to change APA strings
