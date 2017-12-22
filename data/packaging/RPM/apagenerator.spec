@@ -30,8 +30,9 @@ you have to memorize the APA format!
 %install
 rm -rf $RPM_BUILD_ROOT
 %meson_install
+%find_lang %{name}
 
-%files
+%files -f %{name}.lang
 %{_bindir}/%{name}
 %{_datadir}/applications/net.bartkessels.%{name}.desktop
 %{_datadir}/glib-2.0/schemas/net.bartkessels.%{name}.gschema.xml
