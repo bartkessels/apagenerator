@@ -1,7 +1,6 @@
-/*
- * main.c
+/* apagenerator-application.h
  *
- * Copyright (C) 2017 Bart Kessels <bartkessels@bk-mail.com>
+ * Copyright © 2017 Bart Kessels <bartkessels@bk-mail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,30 +14,27 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
  */
+
+#pragma once
 
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 
-#include "apagenerator-application.h"
-#include "apagenerator-config.h"
+#include "apagenerator-app.h"
+#include "apagenerator-dialog-about.h"
+#include "apagenerator-dialog-settings.h"
+#include "apagenerator-window-main.h"
+#include "apagenerator-window-shortcuts.h"
 
-int
-main(int    argc,
-     char **argv)
-{
-    ApageneratorApplication *app;
-    int return_status;
+G_BEGIN_DECLS
 
-    /* Setup gettext translations */
-    bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-    textdomain (GETTEXT_PACKAGE);
+#define APAGENERATOR_TYPE_APPLICATION (apagenerator_application_get_type ())
 
-    /* Create and launch application */
-    app = apagenerator_application_new ();
-    return_status = g_application_run (G_APPLICATION (app), argc, argv);
+G_DECLARE_FINAL_TYPE (ApageneratorApplication, apagenerator_application,
+											APAGENERATOR, APPLICATION, GtkApplication)
 
-    return return_status;
-}
+/* Public function signatures */
+ApageneratorApplication *apagenerator_application_new ();
+
+G_END_DECLS

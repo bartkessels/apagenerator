@@ -1,5 +1,5 @@
 /*
- * main.c
+ * ag-string.h
  *
  * Copyright (C) 2017 Bart Kessels <bartkessels@bk-mail.com>
  *
@@ -18,27 +18,11 @@
  *
  */
 
-#include <glib/gi18n.h>
-#include <gtk/gtk.h>
+#pragma once
 
-#include "apagenerator-application.h"
-#include "apagenerator-config.h"
+#include <glib.h>
 
-int
-main(int    argc,
-     char **argv)
-{
-    ApageneratorApplication *app;
-    int return_status;
-
-    /* Setup gettext translations */
-    bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-    textdomain (GETTEXT_PACKAGE);
-
-    /* Create and launch application */
-    app = apagenerator_application_new ();
-    return_status = g_application_run (G_APPLICATION (app), argc, argv);
-
-    return return_status;
-}
+/* Public function signatures */
+const gchar* apagenerator_string_replace (const gchar *original_string,
+                                          const gchar *string_to_replace,
+                                          const gchar *string_to_replace_with);

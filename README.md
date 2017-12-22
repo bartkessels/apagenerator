@@ -1,6 +1,6 @@
 # APA Generator
 
-Application to create APA sources to include in your reports.
+Application to create APA strings to include in your reports.
 
 ## Screenshots
 
@@ -9,7 +9,7 @@ Application to create APA sources to include in your reports.
 
 ## What can I do with it?
 
-You can easily create an APA source for a book or webpage by simply
+You can easily create an APA strings for a book or webpage by simply
 filling in the fields.
 
 ## Required packages

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <gresources>
-
     <gresource prefix="/net/bartkessels/apagenerator">
-        <file alias="book.ui" preprocess="xml-stripblanks">ui/ui_book.ui</file>
-        <file alias="webpage.ui" preprocess="xml-stripblanks">ui/ui_webpage.ui</file>
-        <file alias="settings_book.ui" preprocess="xml-stripblanks">ui/ui_settings_book.ui</file>
-        <file alias="settings_webpage.ui" preprocess="xml-stripblanks">ui/ui_settings_webpage.ui</file>
-    </gresource>
 
-    <gresource prefix="/net/bartkessels/apagenerator/elements">
-        <file alias="app_menu.ui" preprocess="xml-stripblanks">ui/ui_element_app_menu.ui</file>
-    </gresource>
+		<!-- Dialogs -->
+		<file alias="dialog-about.ui" preprocess="xml-stripblanks">ui/dialog_about.glade</file>
+		<file alias="dialog-settings.ui" preprocess="xml-stripblanks">ui/dialog_settings.glade</file>
 
+		<!-- Menu's -->
+		<file alias="menu-app.ui" preprocess="xml-stripblanks">ui/menu_app.glade</file>
+
+		<!-- Windows -->
+		<file alias="window-main.ui" preprocess="xml-stripblanks">ui/window_main.glade</file>
+		<file alias="window-shortcuts.ui" preprocess="xml-stripblanks">ui/window_shortcuts.glade</file>
+
+    </gresource>
 </gresources>

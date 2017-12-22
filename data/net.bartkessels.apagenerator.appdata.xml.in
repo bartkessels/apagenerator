@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+	<id>net.bartkessels.apagenerator.desktop</id>
+	<licence>CC0</licence>
+	<project_license>GPL-3.0+</project_license>
+	<name>APA Generator</name>
+	<summary>Create APA strings to include in your reports</summary>
+</component>

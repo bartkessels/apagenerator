@@ -1,46 +1,20 @@
-project('APA Generator', 'c', version: '2.1')
-
-# Imports
-gnome = import('gnome')
-
-# Compile resources
-agresources = gnome.compile_resources(
-    'ag-resources', 'src/apagenerator.gresource.xml',
-    source_dir: 'src',
-    c_name: 'ag_resources'
+project('apagenerator','c',
+	version: '1.1',
+	meson_version: '>= 0.40.0',
 )
+i18n = import('i18n')
 
-# Dependencies
-deps = [
-    dependency('gtk+-3.0'),
-    dependency('glib-2.0')
-]
+config_h = configuration_data()
+config_h.set_quoted('GETTEXT_PACKAGE', 'apagenerator')
+config_h.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+configure_file(
+	output: 'apagenerator-config.h',
+	configuration: config_h,
+)
+add_project_arguments([
+	'-I' + meson.build_root(),
+], language: 'c')
 
-# Source files
-src = [
-    agresources,
-    'src/ag-application.c',
-    'src/ag-content-book.c',
-    'src/ag-content-webpage.c',
-    'src/ag-headerbar.c',
-    'src/ag-mainwindow.c',
-    'src/ag-settings-content-book.c',
-    'src/ag-settings-content-webpage.c',
-    'src/ag-settings-headerbar.c',
-    'src/ag-settings-stack.c',
-    'src/ag-settings.c',
-    'src/ag-settingswindow.c',
-    'src/ag-stack.c',
-    'src/ag-string.c',
-    'src/main.c'
-]
-
-# Desktop file
-install_data('data/package/apagenerator.desktop', install_dir: join_paths(get_option('datadir'), 'applications'))
-
-# Gsettings schemas
-install_data('data/gschemas/net.bartkessels.apagenerator.gschema.xml', install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas'))
-meson.add_install_script('data/gschemas/compile_schemas.py')
-
-# Executable information
-executable('apagenerator', src, dependencies: deps, install: true)
+subdir('data')
+subdir('src')
+meson.add_install_script('build-aux/meson/postinstall.py')

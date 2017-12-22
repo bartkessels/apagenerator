@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<requires lib="gtk+" version="3.20"/>
+	<!-- interface-license-type gplv3 -->
+	<!-- interface-name APA Generator -->
+	<!-- interface-copyright Bart Kessels -->
+	<!-- interface-authors Bart Kessels <bartkessels@bk-mai.com> -->
+	<template class="ApageneratorWindowShortcuts" parent="GtkShortcutsWindow">
+		<property name="modal">true</property>
+		<child>
+			<object class="GtkShortcutsSection">
+				<property name="visible">1</property>
+				<property name="section-name">shortcuts</property>
+				<property name="title" translatable="yes">Shortcuts</property>
+
+				<!-- Main -->
+				<child>
+					<object class="GtkShortcutsGroup">
+						<property name="visible">1</property>
+						<property name="title" translatable="yes">Main</property>
+
+						<!-- Copy string -->
+						<child>
+							<object class="GtkShortcutsShortcut">
+								<property name="visible">1</property>
+								<property name="accelerator">&lt;ctrl&gt;&lt;alt&gt;c</property>
+								<property name="title" translatable="yes">Copy APA String</property>
+							</object>
+						</child>
+
+					</object>
+				</child>
+
+			</object>
+		</child>
+	</template>
+</interface>
