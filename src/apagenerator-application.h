@@ -18,7 +18,6 @@
 
 #pragma once
 
-#include <glib/gi18n.h>
 #include <gtk/gtk.h>
 
 #include "apagenerator-app.h"

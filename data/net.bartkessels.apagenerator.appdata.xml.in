@@ -5,6 +5,7 @@
 	<project_license>GPL-3.0+</project_license>
 	<name>APA Generator</name>
 	<summary>Create APA strings to include in your reports</summary>
+	<translation type="gettext">apagenerator</translation>
 
 	<description>
 		<p>
@@ -36,6 +37,7 @@
 
 	<languages>
 		<lang>en_US</lang>
+		<lang percentage="100%">nl_NL</lang>
 	</languages>
 
 	<provides>

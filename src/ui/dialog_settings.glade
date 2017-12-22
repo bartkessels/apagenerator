@@ -132,7 +132,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{author}}</property>
+                                <property name="label">{{author}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -145,7 +145,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{year}}</property>
+                                <property name="label">{{year}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -158,7 +158,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{version}}</property>
+                                <property name="label">{{version}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -171,7 +171,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{title}}</property>
+                                <property name="label">{{title}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -184,7 +184,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{chapter}}</property>
+                                <property name="label">{{chapter}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -197,7 +197,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{page}}</property>
+                                <property name="label">{{page}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -210,7 +210,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{location}}</property>
+                                <property name="label">{{location}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -223,7 +223,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{publisher}}</property>
+                                <property name="label">{{publisher}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -299,7 +299,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{author}}</property>
+                                <property name="label">{{author}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -312,7 +312,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{title}}</property>
+                                <property name="label">{{title}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -325,7 +325,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{date_published}}</property>
+                                <property name="label">{{date_published}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -338,7 +338,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{date_consulted}}</property>
+                                <property name="label">{{date_consulted}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
@@ -351,7 +351,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">{{uri}}</property>
+                                <property name="label">{{uri}}</property>
                                 <property name="selectable">True</property>
                               </object>
                               <packing>
