@@ -2,7 +2,6 @@
 Name=APA Generator
 Comment=Generate APA sources
 Exec=apagenerator
-Icon=x-office-document
+Icon=net.bartkessels.apagenerator
 Type=Application
 Categories=Tools;Office
-Name[en_US]=net.bartkessels.apagenerator.desktop.in

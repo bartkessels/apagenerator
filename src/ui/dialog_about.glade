@@ -6,12 +6,12 @@
     <property name="can_focus">False</property>
     <property name="type_hint">dialog</property>
     <property name="program_name">APA Generator</property>
-    <property name="version">2.0</property>
+    <property name="version">2.5</property>
     <property name="copyright">Copyright © 2017 Bart Kessels</property>
     <property name="comments" translatable="yes">APA Generator is an application to create APA strings to include in your reports</property>
     <property name="website">https://github.com/bartkessels/apagenerator</property>
     <property name="authors">Bart Kessels &lt;bartkessels@bk-mail.com&gt;</property>
-    <property name="logo_icon_name">document-new</property>
+    <property name="logo_icon_name">net.bartkessels.apagenerator</property>
     <property name="license_type">gpl-3-0</property>
     <child internal-child="vbox">
       <object class="GtkBox">

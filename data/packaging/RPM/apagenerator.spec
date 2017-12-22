@@ -36,9 +36,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/net.bartkessels.%{name}.desktop
 %{_datadir}/glib-2.0/schemas/net.bartkessels.%{name}.gschema.xml
 %{_datadir}/appdata/net.bartkessels.%{name}.appdata.xml
+%{_datadir}/icons/hicolor/*/apps/net.bartkessels.%{name}.png
+%{_datadir}/icons/hicolor/*/apps/net.bartkessels.%{name}-symbolic.png
+%{_datadir}/icons/hicolor/*/actions/%{name}-copy-symbolic.png
 
 %changelog
 * Fri Dec 22 2017 Bart Kessels <bartkessels@bk-mail.com> 2.5
+- Ship own icons
 - Cleanup code
 - Move menu in application to global app menu
 - Add about screen
