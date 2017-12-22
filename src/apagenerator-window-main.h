@@ -19,6 +19,7 @@
 #pragma once
 
 #include <gtk/gtk.h>
+#include <string.h>
 
 #include "apagenerator-settings.h"
 #include "apagenerator-string.h"
