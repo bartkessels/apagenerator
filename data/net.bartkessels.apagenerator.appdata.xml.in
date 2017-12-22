@@ -5,4 +5,73 @@
 	<project_license>GPL-3.0+</project_license>
 	<name>APA Generator</name>
 	<summary>Create APA strings to include in your reports</summary>
+
+	<description>
+		<p>
+			Generate an APA string based on your given values. You no longer need
+			to remember the APA template.
+		</p>
+		<p>
+			If your institution uses a non-standard APA template you can change the
+			template that's being used by APA Generator!
+		</p>
+	</description>
+
+	<launchable type="desktop-id">net.bartkessels.apagenerator.desktop</launchable>
+
+	<screenshots>
+		<screenshot type="default">
+			<caption>Generate APA string for a book</caption>
+			<image>https://github.com/bartkessels/apagenerator/raw/master/data/screenshots/book.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>Generate APA string for a webpage</caption>
+			<image>ttps://github.com/bartkessels/apagenerator/raw/master/data/screenshots/webpage.png</image>
+		</screenshot>
+	</screenshots>
+
+	<url type="homepage">https://github.com/bartkessels/apagenerator</url>
+	<developer_name>Bart Kessels</developer_name>
+	<update_contact>bartkessels_AT_bk-mail.com</update_contact>
+
+	<languages>
+		<lang>en_US</lang>
+	</languages>
+
+	<provides>
+		<binary>apagenerator</binary>
+	</provides>
+
+	<releases>
+
+		<release version="2.5" date="2017-12-22">
+			<p>
+				Cleanup code
+				Move menu in application to global app menu
+				Add about screen
+				Add shortcuts screen
+				Give preferences screen overhaul
+			</p>
+		</release>
+		<release version="2.1" date="2017-09-29">
+			<p>
+				Move build system to Meson
+				Fix wrong font in settings window
+				Fix bugs
+			</p>
+		</release>
+
+		<release version="2.0" date="2017-07-05">
+			<p>
+				Rewrite to GObject
+				Allow user to change APA strings
+			</p>
+		</release>
+
+		<release version="1.0" date="2017-03-23">
+			<p>Initial packaging</p>
+		</release>
+	</releases>
+
 </component>
+
