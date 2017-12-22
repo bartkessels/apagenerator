@@ -45,16 +45,28 @@ And then run `apagenerator`
 
 ## Generate RPM package
 
-You first need to download the latest
-release of APA generator using spectool.
-
 ```
 $ cd packaging/RPM
 $ spectool -g apagenerator.spec
-$ fedpkg --release f26 local
+$ fedpkg --release f27 local
 ```
 
 This will create a RPM file which you can install using your package manager.
+
+## Generate flatpak bundle
+
+```
+$ cd data/packaging/flatpak
+$ flatpak-builder --repo=apagenerator_repo apagenerator net.bartkessels.apagenerator.json
+$ flatpak build-bundle apagenerator_repo apagenerator.flatpak net.bartkessels.apagenerator
+```
+
+This will create a flatpak bundle called `apagenerator.flatpak`. To install the flatpak bundle
+just run the flatpak install command.
+
+```
+$ flatpak install apagenerator.flatpak
+```
 
 ## COPR
 
