@@ -47,32 +47,30 @@
 	<releases>
 
 		<release version="2.5" date="2017-12-22">
-			<p>
-				Cleanup code
-				Move menu in application to global app menu
-				Add about screen
-				Add shortcuts screen
-				Give preferences screen overhaul
-			</p>
+			<ul>
+				<li>Cleanup code</li>
+				<li>Move menu in application to global app menu</li>
+				<li>Add about screen</li>
+				<li>Add shortcuts screen</li>
+				<li>Give preferences screen overhaul</li>
+			</ul>
 		</release>
 		<release version="2.1" date="2017-09-29">
-			<p>
-				Move build system to Meson
-				Fix wrong font in settings window
-				Fix bugs
-			</p>
+			<ul>
+				<li>Move build system to Meson</li>
+				<li>Fix wrong font in settings window</li>
+				<li>Fix bugs</li>
+			</ul>
 		</release>
 
 		<release version="2.0" date="2017-07-05">
-			<p>
-				Rewrite to GObject
-				Allow user to change APA strings
-			</p>
+			<ul>
+				<li>Rewrite to GObject</li>
+				<li>Allow user to change APA strings</li>
+			</ul>
 		</release>
 
-		<release version="1.0" date="2017-03-23">
-			<p>Initial packaging</p>
-		</release>
+		<release version="1.0" date="2017-03-23" />
 	</releases>
 
 </component>
